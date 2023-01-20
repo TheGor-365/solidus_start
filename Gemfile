@@ -13,6 +13,16 @@ gem "jbuilder"
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 
+gem "solidus_core", ">= 0"
+gem "solidus_backend", ">= 0"
+gem "solidus_api", ">= 0"
+gem "solidus_sample", ">= 0"
+gem "canonical-rails"
+gem "solidus_support"
+gem "truncate_html"
+gem "view_component", "~> 2.46"
+gem 'solidus_stripe', '< 5'
+
 # gem "sassc-rails"
 # gem "redis", "~> 4.0"
 # gem "kredis"
@@ -35,15 +45,6 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
-
-gem "solidus_core", ">= 0"
-gem "solidus_backend", ">= 0"
-gem "solidus_api", ">= 0"
-gem "solidus_sample", ">= 0"
-gem "canonical-rails"
-gem "solidus_support"
-gem "truncate_html"
-gem "view_component", "~> 2.46"
 
 group :development, :test do
   gem "rspec-rails"
